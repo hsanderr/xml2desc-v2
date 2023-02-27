@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<title id="titulo"></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<header>
+	<h1>XML2desc</h1>
+</header>
+
+<body>
+
+	<div class="main">
+		<h2>Sobre</h2>
+		<p>Este programa utiliza o arquivo XML criado pelo Camtasia Studio para
+			gerar uma descrição adequada ao YouTube, com os timestamps e nomes dos
+			capítulos do vídeo.</p>
+		<h2>Como usar</h2>
+		<ul>
+			<li>Colar o texto do XML na caixa de texto da esquerda OU clicar em
+				"Carregar XML" e escolher o arquivo a partir do qual se deseja gerar
+				a descrição.</li>
+			<li>Clicar em "Gerar descrição".</li>
+			<li>Copiar a descrição gerada na caixa de texto da direita e colar na
+				descrição de seu vídeo.</li>
+		</ul>
+
+		<div class="xmlbox" id="demo">
+			<textarea id="in" class="xmlinput"
+				placeholder="Colar texto do XML aqui OU clicar em 'Carregar XML'"></textarea>
+
+			<textarea id="out" class="xmloutput" placeholder="A descrição gerada aparecerá aqui" readonly></textarea>
+		</div>
+
+		<div class="bottomMenu">
+
+			<div class="openfilebutton">
+				<button id="butOpenFile" type="button">Carregar XML</button>
+			</div>
+
+			<div class="createfilebutton">
+				<button onclick="myFunction()">Gerar descrição</button>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="app.js">
+	</script>
+
+
+</body>
+
+</html>
